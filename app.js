@@ -31,6 +31,7 @@ class Game {
         this.resetCounters();
         this.players[0].isTurn = true;
         $('#p1-turn-text').addClass('current-turn');
+        $('#p2-turn-text').removeClass('current-turn');
     }
     clearField() {
         $('.game-field').empty();
