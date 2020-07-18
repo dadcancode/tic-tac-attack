@@ -6,26 +6,26 @@
     /* border: 1px solid chartreuse */
 }
 
-body {
-    background-image: linear-gradient(to right, #4B79A1, #283E51);
+/* body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
+} */
 
 #game-container {
-    height: 100vh;
+    height: 800px;
     display: flex;
     flex-direction: column;
     width: 95%;
     min-width: 1200px;
     justify-content: center;
     align-items: center;
+    background-image: linear-gradient(to right, #4B79A1, #283E51);
 }
 
 #result-container {
-    height: 12%;
+    height: 12vh;
     display: flex;
     justify-content: space-around;
 }
