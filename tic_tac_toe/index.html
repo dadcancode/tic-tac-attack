@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Attack!</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+    <div id="game-container">
+        <div class="gc-row" id="result-container">
+            <div class="result-item">
+                <p>P1 Wins: <span id="p1-win-count"></span></p>
+            </div>
+            <div class="result-item">
+                <p>P2 Wins: <span id="p2-win-count"></span></p>
+            </div>
+        </div>
+        <div class="gc-row" id="game-field-container">
+            <div class="game-row" id="top">
+                <div class="game-field" id="top-left"></div>
+                <div class="game-field" id="top-center"></div>
+                <div class="game-field" id="top-right"></div>
+            </div>
+            <div class="game-row" id="middle">
+                <div class="game-field" id="middle-left"></div>
+                <div class="game-field" id="middle-center"></div>
+                <div class="game-field" id="middle-right"></div>
+            </div>
+            <div class="game-row" id="bottom">
+                <div class="game-field" id="bottom-left"></div>
+                <div class="game-field" id="bottom-center"></div>
+                <div class="game-field" id="bottom-right"></div>
+            </div>
+        </div>
+        <div class="gc-row" id="turn-container">
+            <div class="turn-item" id="p1-turn">
+                <p class="turn-text" id="p1-turn-text">P1</p>
+            </div>
+            <div class="turn-item" id="p2-turn">
+                <p class="turn-text" id="p2-turn-text">P2</p>
+            </div>
+        </div>
+    </div>
+    <div class="modalClass" id="modal">
+        <div id="modal-wrapper">
+            <div id="modal-textbox">
+                <h1 id="winner-text">Some Text</h1>
+                    <p>Would you like to play again or restart the game?</p>
+            </div>
+            <div id="modal-buttons">
+                <div class="modbtn" id="play-again">PLAY AGAIN</div>
+                <div class="modbtn" id="restart">RESTART</div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="modalClass" id="start-modal">
+        <div id="start-modal-wrapper">
+            <div class="start-modal-box" id="start-modal-title">
+                <h1>TIC-TAC-ATTACK!</h1>
+            </div>
+            <div class="start-modal-box" id="player-choose-container">
+                <div id="player-choose-text">Which player will go first?</div>
+                <div id="choose-box-cont">
+                    <div class="choose-box" id="p1Choose">PLAYER 1</div>
+                    <div class="choose-box" id="p2Choose">PLAYER 2</div>
+                </div>
+            </div>
+            <div class="start-modal-box" id="game-mode-select">
+                <div class="mode-select-row">
+                    <div class="mode-select-btn-box">
+                        <div class="mode-btn" id="classic">CLASSIC</div>
+                    </div>
+                    <div class="mode-select-text">
+                        Old school. Each player alternates going first playing as the 'X' symbol.
+                    </div>
+                </div>
+                <div class="mode-select-row">
+                    <div class="mode-select-btn-box">
+                        <div class="mode-btn" id="king">KING OF THE HILL</div>
+                    </div>
+                    <div class="mode-select-text">
+                        Survival of the fittest. Winner keeps playing as 'X' and going first.
+                    </div>
+                </div>
+                <div class="mode-select-row">
+                    <div class="mode-select-btn-box">
+                        <div class="mode-btn" id="random">RANDOM</div>
+                    </div>
+                    <div class="mode-select-text">Feeling lucky? Let fate decide your....fate.</div>
+                </div>
+            </div>
+            <div class="start-modal-box" id="start-game">START</div>
+        </div>     -->
+    </div>
+</body>
+</html>
