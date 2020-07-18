@@ -19,17 +19,21 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    width: 400px;
-    min-width: 1200px;
+    width: 100%;
+    /* min-width: 1200px; */
     justify-content: center;
     align-items: center;
     background-image: linear-gradient(to right, #4B79A1, #283E51);
 }
 
 #result-container {
-    height: 12vh;
+    height: 12%;
     display: flex;
     justify-content: space-around;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .result-item {
@@ -41,9 +45,13 @@
 #turn-container {
     height: 17%;
     display: flex;
-    justify-content: space-between;
-    padding-left: 20%;
-    padding-right: 20%;
+    justify-content: space-around;
+    /* padding-left: 20%;
+    padding-right: 20%; */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .turn-item {
@@ -60,11 +68,11 @@
 }
 
 #game-field-container {
-    height: 71%;
+    height: 45vh;
     display: flex;
     flex-direction: column;
     padding: 10%;
-    width: 60%;
+    width: 85%;
     display: flex;
     flex-direction: column;
 }
